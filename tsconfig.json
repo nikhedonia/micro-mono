@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "composite": true,
+    "incremental": true,
+    "tsBuildInfoFile": "build/.tsbuildinfo",
+    "paths": {
+      "app1": ["./packages/app1/src"],
+      "app1/*": ["./packages/app1/src/*"],
+      "host": ["./packages/host/src"],
+      "host/*": ["./packages/host/src/*"],
+    }
+  },
+  "references": [
+    { "path": "./packages/app1" },
+    { "path": "./packages/host" },
+  ],
+  "include": [
+    "./packages/*/src/**/*"
+  ],
+  "exclude": ["node_modules", "build", "out", "public"]
+}
