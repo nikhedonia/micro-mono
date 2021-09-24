@@ -8,6 +8,7 @@
   "description": "minimal microfrontend mono repo template. I went through all the pitfalls so you don't have to",
   "scripts": {
     "build": "wsrun build",
+    "dev": "wsrun webpack-dev-server",
     "start": "wsrun start",
     "clear": "rm -rf packages/*/out"
   },

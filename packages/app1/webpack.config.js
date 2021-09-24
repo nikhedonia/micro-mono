@@ -19,7 +19,7 @@ module.exports = (env, args) => {
     },
     remoteType: 'var',
     filename: "remoteEntry.js",
-    shared: {}
+    shared: ["react", "react-dom", "single-spa", "single-spa-react"]
   });
   
   const config = merge(base, {
